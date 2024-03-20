@@ -2,4 +2,4 @@
 title: "About"
 ---
 
-About this site
+We are the [Department of Computational Social Science](https://www.gesis.org/en/institute/departments/computational-social-science) at [GESIS – Leibniz Institute for the Social Sciences](https://gesis.org/) and our mission is to support scientists who aim to work with digital behavioral data to learn about social and socio-technical phenomena.
