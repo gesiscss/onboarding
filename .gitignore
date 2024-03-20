@@ -1,5 +1,6 @@
 # Quarto
 /.quarto/
+_site
 
 # History files
 .Rhistory
