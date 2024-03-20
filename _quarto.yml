@@ -3,11 +3,18 @@ project:
 
 website:
   title: "Onboarding"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
+  page-navigation: true
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - index.qmd
       - about.qmd
+      - section: "Developers"
+        contents:
+          - developers/index.qmd
+          - developers/version-control.qmd
+          - developers/container-registry.qmd
 
 format:
   html:

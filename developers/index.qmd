@@ -1,0 +1,11 @@
+# Get started
+
+## On Windows
+
+### With Windows Subsystem for Linux
+
+### Without Windows Subsystem for Linux
+
+## On macOS
+
+## On GNU/Linux

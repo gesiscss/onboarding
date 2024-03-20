@@ -1,0 +1,91 @@
+# Container Registry
+
+Containers is a great solution to provide or use a fully functional and portable computing environment. At GESIS, we can register our container image at [Docker Hub](https://hub.docker.com/) (public) or [GESIS Sonatype Nexus Repository](https://docker-private.gesis.intra/) (private).
+
+## GESIS Sonatype Nexus Repository
+
+GESIS uses [Sonatype Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository).
+
+### Read Proxy
+
+`docker-private.gesis.intra` should be used when pulling the container image.
+
+#### List Tags with Sonatype Nexus Repository
+
+Sonatype Nexus Repository has a [user interface](https://help.sonatype.com/en/user-interface-overview.html) but it is disabled on GESIS instance.
+
+<!--
+### List Tags with `go-containerregistry`
+-->
+
+#### List Tags with `skopeo`
+
+[`skopeo`](https://github.com/containers/skopeo) can be used to list the tags of a container image. For example,
+
+```bash
+skopeo list-tags docker://docker-private.gesis.intra/gesis/project/image
+```
+
+returns
+
+```
+{
+    "Repository": "docker-private.gesis.intra/gesis/project/image",
+    "Tags": [
+        "1.0.0",
+        "2.0.0",
+        "3.0.0",
+        "latest"
+    ]
+}
+```
+
+`skopeo` can also be used to inspect the information of a container image. For example,
+
+```bash
+skopeo inspect docker://docker-private.gesis.intra/gesis/project/image
+```
+
+returns
+
+```
+{
+    "Name": "docker-private.gesis.intra/gesis/project/image",
+    "Digest": "sha256:",
+    "RepoTags": [],
+    "Created": "2024-03-20T10:30:40.466066089Z",
+    "DockerVersion": "20.10.21",
+    "Labels": null,
+    "Architecture": "amd64",
+    "Os": "linux",
+    "Layers": [],
+    "Env": [
+        "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "LANG=C.UTF-8",
+    ]
+}
+```
+
+### Snapshot Registry
+
+`docker-private-snapshots.gesis.intra` should be used when pushing a snapshop / ephemeral.
+
+### Release Registry
+
+`docker-private-releases.gesis.intra` should be used when pushing a release.
+
+::: {.callout-important}
+
+`docker-private-releases.gesis.intra` is write-only-once per container image tag. In other words, execute
+
+```bash
+docker push docker-private-releases.gesis.intra/gesis/project/image:1.0.0
+```
+
+will work the first time but execute the command again will result in
+
+```
+blob upload invalid: blob upload invalid
+```
+
+:::
