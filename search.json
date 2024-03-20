@@ -1,16 +1,62 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Onboarding",
+    "objectID": "developers/container-registry.html",
+    "href": "developers/container-registry.html",
+    "title": "Container Registry",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Containers is a great solution to provide or use a fully functional and portable computing environment. At GESIS, we can register our container image at Docker Hub (public) or GESIS Sonatype Nexus Repository (private).\n\n\nGESIS uses Sonatype Nexus Repository.\n\n\ndocker-private.gesis.intra should be used when pulling the container image.\n\n\nSonatype Nexus Repository has a user interface but it is disabled on GESIS instance.\n\n\n\n\nskopeo can be used to list the tags of a container image. For example,\nskopeo list-tags docker://docker-private.gesis.intra/gesis/project/image\nreturns\n{\n    \"Repository\": \"docker-private.gesis.intra/gesis/project/image\",\n    \"Tags\": [\n        \"1.0.0\",\n        \"2.0.0\",\n        \"3.0.0\",\n        \"latest\"\n    ]\n}\nskopeo can also be used to inspect the information of a container image. For example,\nskopeo inspect docker://docker-private.gesis.intra/gesis/project/image\nreturns\n{\n    \"Name\": \"docker-private.gesis.intra/gesis/project/image\",\n    \"Digest\": \"sha256:\",\n    \"RepoTags\": [],\n    \"Created\": \"2024-03-20T10:30:40.466066089Z\",\n    \"DockerVersion\": \"20.10.21\",\n    \"Labels\": null,\n    \"Architecture\": \"amd64\",\n    \"Os\": \"linux\",\n    \"Layers\": [],\n    \"Env\": [\n        \"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\n        \"LANG=C.UTF-8\",\n    ]\n}\n\n\n\n\ndocker-private-snapshots.gesis.intra should be used when pushing a snapshop / ephemeral.\n\n\n\ndocker-private-releases.gesis.intra should be used when pushing a release.\n\n\n\n\n\n\nImportant\n\n\n\ndocker-private-releases.gesis.intra is write-only-once per container image tag. In other words, execute\ndocker push docker-private-releases.gesis.intra/gesis/project/image:1.0.0\nwill work the first time but execute the command again will result in\nblob upload invalid: blob upload invalid",
+    "crumbs": [
+      "Developers",
+      "Container Registry"
+    ]
+  },
+  {
+    "objectID": "developers/container-registry.html#gesis-sonatype-nexus-repository",
+    "href": "developers/container-registry.html#gesis-sonatype-nexus-repository",
+    "title": "Container Registry",
+    "section": "",
+    "text": "GESIS uses Sonatype Nexus Repository.\n\n\ndocker-private.gesis.intra should be used when pulling the container image.\n\n\nSonatype Nexus Repository has a user interface but it is disabled on GESIS instance.\n\n\n\n\nskopeo can be used to list the tags of a container image. For example,\nskopeo list-tags docker://docker-private.gesis.intra/gesis/project/image\nreturns\n{\n    \"Repository\": \"docker-private.gesis.intra/gesis/project/image\",\n    \"Tags\": [\n        \"1.0.0\",\n        \"2.0.0\",\n        \"3.0.0\",\n        \"latest\"\n    ]\n}\nskopeo can also be used to inspect the information of a container image. For example,\nskopeo inspect docker://docker-private.gesis.intra/gesis/project/image\nreturns\n{\n    \"Name\": \"docker-private.gesis.intra/gesis/project/image\",\n    \"Digest\": \"sha256:\",\n    \"RepoTags\": [],\n    \"Created\": \"2024-03-20T10:30:40.466066089Z\",\n    \"DockerVersion\": \"20.10.21\",\n    \"Labels\": null,\n    \"Architecture\": \"amd64\",\n    \"Os\": \"linux\",\n    \"Layers\": [],\n    \"Env\": [\n        \"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\n        \"LANG=C.UTF-8\",\n    ]\n}\n\n\n\n\ndocker-private-snapshots.gesis.intra should be used when pushing a snapshop / ephemeral.\n\n\n\ndocker-private-releases.gesis.intra should be used when pushing a release.\n\n\n\n\n\n\nImportant\n\n\n\ndocker-private-releases.gesis.intra is write-only-once per container image tag. In other words, execute\ndocker push docker-private-releases.gesis.intra/gesis/project/image:1.0.0\nwill work the first time but execute the command again will result in\nblob upload invalid: blob upload invalid",
+    "crumbs": [
+      "Developers",
+      "Container Registry"
+    ]
+  },
+  {
+    "objectID": "developers/version-control.html",
+    "href": "developers/version-control.html",
+    "title": "Version Control",
+    "section": "",
+    "text": "Version Control",
+    "crumbs": [
+      "Developers",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "CONTRIBUTING.html",
+    "href": "CONTRIBUTING.html",
+    "title": "Contributing",
+    "section": "",
+    "text": "Contributing\nThis documentation is build using Quarto. The .qmd files are Markdown files with a couple of exntensions."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "We are the Department of Computational Social Science at GESIS – Leibniz Institute for the Social Sciences and our mission is to support scientists who aim to work with digital behavioral data to learn about social and socio-technical phenomena.",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Onboarding",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.",
+    "crumbs": [
+      "Onboarding"
+    ]
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Onboarding - About</title>
+<title>Onboarding</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./developers/index.html" rel="next">
-<link href="./index.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../developers/version-control.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -70,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked">
@@ -82,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html">About</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../developers/index.html">Developers</a></li><li class="breadcrumb-item"><a href="../developers/container-registry.html">Container Registry</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -97,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Onboarding</a> 
+      <a href="../">Onboarding</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -109,13 +142,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Onboarding</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link active">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About</span></a>
   </div>
 </li>
@@ -130,19 +163,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./developers/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../developers/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Get started</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./developers/version-control.html" class="sidebar-item-text sidebar-link">
+  <a href="../developers/version-control.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Version Control</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./developers/container-registry.html" class="sidebar-item-text sidebar-link">
+  <a href="../developers/container-registry.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Container Registry</span></a>
   </div>
 </li>
@@ -154,33 +187,106 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#container-registry" id="toc-container-registry" class="nav-link active" data-scroll-target="#container-registry">Container Registry</a>
+  <ul class="collapse">
+  <li><a href="#gesis-sonatype-nexus-repository" id="toc-gesis-sonatype-nexus-repository" class="nav-link" data-scroll-target="#gesis-sonatype-nexus-repository">GESIS Sonatype Nexus Repository</a>
+  <ul class="collapse">
+  <li><a href="#read-proxy" id="toc-read-proxy" class="nav-link" data-scroll-target="#read-proxy">Read Proxy</a></li>
+  <li><a href="#snapshot-registry" id="toc-snapshot-registry" class="nav-link" data-scroll-target="#snapshot-registry">Snapshot Registry</a></li>
+  <li><a href="#release-registry" id="toc-release-registry" class="nav-link" data-scroll-target="#release-registry">Release Registry</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">About</h1>
+
+
+
+<section id="container-registry" class="level1">
+<h1>Container Registry</h1>
+<p>Containers is a great solution to provide or use a fully functional and portable computing environment. At GESIS, we can register our container image at <a href="https://hub.docker.com/">Docker Hub</a> (public) or <a href="https://docker-private.gesis.intra/">GESIS Sonatype Nexus Repository</a> (private).</p>
+<section id="gesis-sonatype-nexus-repository" class="level2">
+<h2 class="anchored" data-anchor-id="gesis-sonatype-nexus-repository">GESIS Sonatype Nexus Repository</h2>
+<p>GESIS uses <a href="https://www.sonatype.com/products/sonatype-nexus-repository">Sonatype Nexus Repository</a>.</p>
+<section id="read-proxy" class="level3">
+<h3 class="anchored" data-anchor-id="read-proxy">Read Proxy</h3>
+<p><code>docker-private.gesis.intra</code> should be used when pulling the container image.</p>
+<section id="list-tags-with-sonatype-nexus-repository" class="level4">
+<h4 class="anchored" data-anchor-id="list-tags-with-sonatype-nexus-repository">List Tags with Sonatype Nexus Repository</h4>
+<p>Sonatype Nexus Repository has a <a href="https://help.sonatype.com/en/user-interface-overview.html">user interface</a> but it is disabled on GESIS instance.</p>
+<!--
+### List Tags with `go-containerregistry`
+-->
+</section>
+<section id="list-tags-with-skopeo" class="level4">
+<h4 class="anchored" data-anchor-id="list-tags-with-skopeo">List Tags with <code>skopeo</code></h4>
+<p><a href="https://github.com/containers/skopeo"><code>skopeo</code></a> can be used to list the tags of a container image. For example,</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">skopeo</span> list-tags docker://docker-private.gesis.intra/gesis/project/image</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>returns</p>
+<pre><code>{
+    "Repository": "docker-private.gesis.intra/gesis/project/image",
+    "Tags": [
+        "1.0.0",
+        "2.0.0",
+        "3.0.0",
+        "latest"
+    ]
+}</code></pre>
+<p><code>skopeo</code> can also be used to inspect the information of a container image. For example,</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">skopeo</span> inspect docker://docker-private.gesis.intra/gesis/project/image</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>returns</p>
+<pre><code>{
+    "Name": "docker-private.gesis.intra/gesis/project/image",
+    "Digest": "sha256:",
+    "RepoTags": [],
+    "Created": "2024-03-20T10:30:40.466066089Z",
+    "DockerVersion": "20.10.21",
+    "Labels": null,
+    "Architecture": "amd64",
+    "Os": "linux",
+    "Layers": [],
+    "Env": [
+        "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "LANG=C.UTF-8",
+    ]
+}</code></pre>
+</section>
+</section>
+<section id="snapshot-registry" class="level3">
+<h3 class="anchored" data-anchor-id="snapshot-registry">Snapshot Registry</h3>
+<p><code>docker-private-snapshots.gesis.intra</code> should be used when pushing a snapshop / ephemeral.</p>
+</section>
+<section id="release-registry" class="level3">
+<h3 class="anchored" data-anchor-id="release-registry">Release Registry</h3>
+<p><code>docker-private-releases.gesis.intra</code> should be used when pushing a release.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>docker-private-releases.gesis.intra</code> is write-only-once per container image tag. In other words, execute</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> push docker-private-releases.gesis.intra/gesis/project/image:1.0.0</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>will work the first time but execute the command again will result in</p>
+<pre><code>blob upload invalid: blob upload invalid</code></pre>
+</div>
 </div>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>We are the <a href="https://www.gesis.org/en/institute/departments/computational-social-science">Department of Computational Social Science</a> at <a href="https://gesis.org/">GESIS – Leibniz Institute for the Social Sciences</a> and our mission is to support scientists who aim to work with digital behavioral data to learn about social and socio-technical phenomena.</p>
-
-
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -594,14 +700,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Onboarding">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Onboarding</span>
+      <a href="../developers/version-control.html" class="pagination-link" aria-label="Version Control">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Version Control</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./developers/index.html" class="pagination-link" aria-label="Get started">
-        <span class="nav-page-text">Get started</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
